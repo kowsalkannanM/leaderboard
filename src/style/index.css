@@ -1,0 +1,78 @@
+
+body {
+  background-color: #ccc;
+}
+
+.circle-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: relative;
+}
+
+.circle-img img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.serial {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.serial.red {
+  background-color: red;
+  color: whitesmoke;
+}
+
+.serial.orange {
+  background-color: orange;
+  color: whitesmoke;
+}
+
+.serial.yellow {
+  background-color: #ff6a00;
+  color: whitesmoke;
+}
+
+.serial.blue {
+  background-color: skyblue;
+  color: whitesmoke;
+}
+/* Animate the position of the Content element when it moves up */
+.Content.moved-up {
+  animation: move-up 0.8s ease-in-out;
+}
+
+.Content.moved-down {
+  animation: move-down 0.8s ease-in-out; 
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes move-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+
+
